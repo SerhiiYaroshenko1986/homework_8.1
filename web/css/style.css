@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background: repeating-linear-gradient(to right, #f6f6f6, #f6f6f6 30px, #f3e2dd 30px, #f3e2dd 100px);
+    font-family: 'Lato', sans-serif;
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 110px;
+}
+
+.inner__title::after {
+    content: '';
+    width: 49px;
+    height: 3px;
+    display: block;
+    margin: 20px auto;
+    background-color: rgba(60, 60, 60, 0.6);
+    opacity: 0.4;
+}
+
+.inner__title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.inner__subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: #8e7e78
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.employee__pic {
+    width: 100%;
+    height: 270px;
+    backdrop-filter: brightness(80%);
+}
+
+.employee {
+    margin: 15px;
+    width: 270px;
+    height: 325px;
+    position: relative;
+}
+
+.employee__name {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3c3c3c;
+}
+
+.employee__position {
+    font-size: 14px;
+    color: #705f5a;
+    font-weight: 300;
+}
+
+.position__rule {
+    position: relative;
+}
+
+.employee__media {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.employee__social {
+    border-radius: 10%;
+    max-width: 23px;
+    height: 23px;
+    padding: 7px;
+    margin: 2px;
+    backdrop-filter: brightness(70%);
+    background-color: rgb(246, 246, 246, 0.4);
+}
+
+.employee__socialf {
+    padding: 7px 14px;
+}
+
+.invisible:hover {
+    opacity: 1;
+    transition: opacity 0.3s linear;
+}
+
+.invisible a:hover {
+    transform: translateY(-10px);
+    transition: opacity 1s linear;
+}
+
+.invisible a img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.52);
+}
+
+.invisible {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(15, 115, 216, 0.5);
+    backdrop-filter: blur(5px) contrast(.8) brightness(80%);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scaleY(1.05);
+}
